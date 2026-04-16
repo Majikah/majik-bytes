@@ -1,0 +1,51 @@
+{
+  "name": "@majikah/majik-bytes",
+  "type": "module",
+  "description": "MajikBytes isa TypeScript utility for lossless byte ↔ media conversion. It allows you to safely and losslessly encode arbitrary data (Files, JSON, Strings, ArrayBuffers) directly into standard PNG images or structured TXT files.",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "author": "Zelijah",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Majikah/majik-bytes.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/jedlsf"
+  },
+  "keywords": [
+    "majikah",
+    "majik-bytes",
+    "steganography",
+    "lossless-encoding",
+    "png-data-storage",
+    "sha3-512",
+    "tamper-evident",
+    "data-integrity",
+    "binary-serialization",
+    "pixel-packing",
+    "canvas-safe",
+    "typescript",
+    "arraybuffer",
+    "file-to-png",
+    "metadata-preservation"
+  ],
+  "homepage": "https://github.com/Majikah/majik-bytes#readme",
+  "bugs": {
+    "url": "https://github.com/Majikah/majik-bytes/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@noble/hashes": "^2.2.0"
+  }
+}
