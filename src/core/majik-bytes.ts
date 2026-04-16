@@ -586,9 +586,17 @@ export class MajikBytes {
       );
     }
     const requiredPixels = Math.ceil(byteCount / 3);
-    const width = Math.ceil(Math.sqrt(requiredPixels));
+
+    // Calculate a square-ish width, but force it to be at least 22 pixels
+    // so the 64-byte SHA-3-512 hash can safely fit in the final hash row.
+    let width = Math.ceil(Math.sqrt(requiredPixels));
+    if (width < 22) {
+      width = 22;
+    }
+
     const dataRows = Math.ceil(requiredPixels / width);
     const dataPixels = width * dataRows;
+
     return { width, height: dataRows, dataPixels, dataRows };
   }
 

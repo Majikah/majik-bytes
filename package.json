@@ -2,7 +2,7 @@
   "name": "@majikah/majik-bytes",
   "type": "module",
   "description": "MajikBytes isa TypeScript utility for lossless byte ↔ media conversion. It allows you to safely and losslessly encode arbitrary data (Files, JSON, Strings, ArrayBuffers) directly into standard PNG images or structured TXT files.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "Apache-2.0",
   "author": "Zelijah",
   "main": "./dist/index.js",
